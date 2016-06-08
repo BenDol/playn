@@ -22,6 +22,7 @@
     <exclude name='**/*Test.java' />
   </source>
   <source path='html'/>
+  <source path='shared'/>
   <super-source path="super" />
 
   <!--

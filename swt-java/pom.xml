@@ -39,7 +39,7 @@
 
   <build>
     <sourceDirectory>src</sourceDirectory>
-    <testSourceDirectory>tests</testSourceDirectory>
+    <!--<testSourceDirectory>tests</testSourceDirectory>-->
   </build>
 
   <!-- a bunch of profile jiggery pokery to pick the appropriate SWT jar -->

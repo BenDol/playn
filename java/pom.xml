@@ -51,9 +51,9 @@
     </dependency>
 
     <dependency>
-      <groupId>jlayer</groupId>
+      <groupId>com.googlecode.soundlibs</groupId>
       <artifactId>mp3spi</artifactId>
-      <version>1.9.5</version>
+      <version>1.9.5-2</version>
     </dependency>
 
     <dependency>
@@ -66,5 +66,20 @@
   <build>
     <sourceDirectory>src</sourceDirectory>
     <testSourceDirectory>tests</testSourceDirectory>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>attach-sources</id>
+            <phase>generate-resources</phase>
+            <goals>
+              <goal>jar-no-fork</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
   </build>
 </project>

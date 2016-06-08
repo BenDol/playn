@@ -6,3 +6,6 @@ target
 # /tests/
 /tests/android/assets
 /tests/ios/assets
+
+.idea/*
+**/*.iml
